@@ -80,14 +80,14 @@ The dataset consists of historical NBA game data spanning multiple seasons, cont
 ## Exporatory Data Analysis
 
 ### Home Court Advantage
-![Home Advantage](./HomevsAway.png)
+![Home Advantage](./NBA_Predict_Images/HomevsAway.png)
 
 **Key Finding**: Home teams win at **57.2%** vs. away teams at **43%** - a 14 percentage point advantage that's statistically significant and validates the importance of venue as a predictive feature.
 
 ---
 
 ### Rest Days Impact on Win Rate
-![Rest Days Impact](./Rest_days_winrate.png)
+![Rest Days Impact](./NBA_Predict_Images/Rest_days_winrate.png)
 
 **Key Insights**:
 - **0-1 days rest**: 44.3% win rate (fatigue effect)
@@ -95,20 +95,20 @@ The dataset consists of historical NBA game data spanning multiple seasons, cont
 - **2-3 days rest**: 52.1% win rate(optimal rest time)
 - **3-5 days rest**: 51.2% win rate
 - **5-10 days rest**: 50.5% win rate
-- **10+ days rest**: 50% win rate (same as baseline based on the fact that this amount of rest usually indicates the end of the season or all star break)
+- **10+ days rest**: 50% win rate (same as baseline based on the fact that this amount of rest usually indicates the end of the season or all-star break)
 
-**Implication**: An 7.8% performance differential exists between optimal rest and least amount of rest, validating the importance of schedule management.
+**Implication**: A 7.8% performance differential exists between optimal rest and the least amount of rest, validating the importance of schedule management.
 
 ---
 
 ### Target Distribution
-![Target Distribution](./target_dist.png)
+![Target Distribution](./NBA_Predict_Images/target_dist.png)
 
 **Observation**: Perfectly balanced dataset with equal wins and losses, eliminating class imbalance concerns and establishing a natural baseline of 50%.
 
 ---
 
 ### Top 10 Most Important Features
-![Feature Importance](./feature_importance.png)
+![Feature Importance](./NBA_Predict_Images/feature_importance.png)
 
-**Key Takeaway**: Rolling averages of point differential and race differencial are the strongest predictors, indicating that **recent performance matters more than season-long statistics**.
+**Key Takeaway**: Rolling averages of point differential and race differential are the strongest predictors, indicating that **recent performance matters more than season-long statistics**.
