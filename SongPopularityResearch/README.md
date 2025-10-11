@@ -77,7 +77,7 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 - Very High popularity songs concentrate in low acousticness range (0.0-0.3)
 - Correlation coefficient: -0.23 (moderate negative)
 ### Finding 3: Instrumentalness Strongly Negative
-- Nearly all Very High popularity songs have instrumentalness near 0 (vocal-focused)
+- The majority of Very High popularity songs have instrumentalness near 0 (vocal-focused)
 - Low popularity includes many instrumental tracks (0.5-1.0 range)
 - Correlation coefficient: -0.26 (strongest negative correlation)
 - Songs with more vocals are likely to be more popular
@@ -90,7 +90,7 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 - Ridge/Lasso Regression: Test regularization effects
 - Decision Tree: Identify non-linear patterns
 - Random Forest: Primary analytical tool for feature importance
-- Gradient Boosting: Validate findings with alternative ensemble method
+- Gradient Boosting: Validate findings with an alternative ensemble method
 
 ### Purpose: These models serve as research instruments to:
 
@@ -103,7 +103,7 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 ### Model Comparison Results
 | Model | Train R² | Test R² | RMSE | MAE | CV Mean | CV Std |
 |-------|----------|---------|------|-----|---------|--------|
-| **Random Forest** ⭐ | 0.893 | **0.244** | **17.50** | **13.72** | 0.217 | 0.036 |
+| **Random Forest**  | 0.893 | **0.244** | **17.50** | **13.72** | 0.217 | 0.036 |
 | Gradient Boosting | 0.833 | 0.197 | 18.03 | 14.00 | 0.178 | 0.035 |
 | Decision Tree | 0.197 | 0.088 | 19.22 | 15.49 | 0.088 | 0.016 |
 | Linear Regression | 0.122 | 0.113 | 18.94 | 15.43 | 0.114 | 0.013 |
@@ -160,11 +160,11 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 
 **Question 1 Answered**:
 
-After finding the most important features from the random forest results it seems that **instrumentalness, duration, loudness, speechiness, and tempo** are most related to a songs popularity.
+After finding the most important features from the random forest results, it seems that **instrumentalness, duration, loudness, speechiness, tempo, liveness, acousticness, danceability, and valence** are the most predictive of a song's popularity.
 
 - **Instrumentalness** as the top predictor indicates that **vocal presence is critical** for mainstream popularity. Purely instrumental tracks face significant commercial challenges.
 
-- **Duration** ranking second suggests listeners and algorithms favor songs within a specific length range, likely optimized for radio play and streaming engagement.
+- **Duration** ranking second suggests listeners and algorithms favor songs within a 2 to 6 minute range, likely optimized for radio play and streaming engagement.
 
 - **Loudness** in the top 3 confirms that professional audio production—particularly mastering quality—plays a measurable role in commercial success.
 
@@ -173,8 +173,8 @@ After finding the most important features from the random forest results it seem
 Based on the R² value of 0.244 from the Random Forest model, approximately **24% of popularity variance can be explained by audio features alone**. 
 While this may initially seem modest, it represents a meaningful and statistically significant relationship. The remaining 76% of variance is attributable to non-audio factors that fundamentally shape commercial success:
  
-- **Artist brand recognition** - Established artists have built-in fan bases
-- **Marketing investment** - Promotional budgets and strategies
+- **Artist Brand Recognition** - Established artists have built-in fan bases
+- **Marketing Investment** - Promotional budgets and strategies
 - **Playlist placement** - Algorithmic and editorial curation on streaming platforms
 - **Social media virality** - TikTok trends, viral moments, cultural timing
 - **Cultural context** - Right song, right moment, right audience
@@ -182,10 +182,9 @@ While this may initially seem modest, it represents a meaningful and statistical
 
 ## Insights for Musicians and Labels
 
+- Stay away from instrumentalness - To have commercial success, Artists should have vocals in their music
+- Song Duration is Key - Keep songs within the range of 2 and 6 minutes
 - Optimize loudness - Professional mixing/mastering matters significantly
-- Increase energy - High-energy tracks have measurably broader appeal
-- Enhance danceability - Consider rhythm and groove in production
-- Consider the combination - High energy + danceability + loudness creates synergy
 - Don't over-rely on acoustics - Fully acoustic tracks face popularity challenges
 
 ##  Technologies Used
