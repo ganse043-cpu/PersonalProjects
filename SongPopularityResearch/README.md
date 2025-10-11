@@ -63,12 +63,14 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 ![](./loudness.png)
 ![](./Graphs/energy.png)
 ![](./Graphs/genre.png)
+![](./Graphs/duration.png)
+
 
 ### Key Findings: 
 
 ### Finding 1:  Loudness shows the strongest positive relationship to song popularity
  - Loudness has the highest correlation coefficient (0.22) with popularity.
- - The scatter plot clearly shows that Low popularity songs cluster at lower loudness levels (-30 to -10 dB)
+ - The scatter plot clearly shows that low-popularity songs cluster at lower loudness levels (-30 to -10 dB)
 - High and Very High popularity songs concentrate at higher loudness levels (-10 to 0 dB)
 ### Finding 2: Acousticness Negatively Correlates with Popularity
 - Low popularity songs heavily represented in high acousticness range (0.5-1.0)
@@ -79,6 +81,8 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 - Low popularity includes many instrumental tracks (0.5-1.0 range)
 - Correlation coefficient: -0.26 (strongest negative correlation)
 - Songs with more vocals are likely to be more popular
+### Finding 4: Song Duration matters
+ - Almost all very high popularity songs sit in the range between 2 and 6 minutes; anything above is populated with medium to low popularity songs.
 
 ## Machine Learning
 ### Models Used:
@@ -110,6 +114,8 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 | Linear Regression | 0.113 | Simple linear relationships explain only 11% |
 | Random Forest | 0.244 | Non-linear patterns more than double explanatory power |
 | Gradient Boosting | 0.197 | Confirms existence of complex interactions |
+
+![](Graphs/modelcomp.png)
 
 ### Key Observations:
 
