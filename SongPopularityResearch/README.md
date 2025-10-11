@@ -49,13 +49,14 @@ This project analyzes 4787 different songs from two datasets, high popularity so
 ## Research
 
 ### Popularity Distribution:
-![](./Graphs/)
+![](./Graphs/PopularityDist.png)
 
 ### Feature Correlation:
 ![feat_corr](./Graphs/feat_corr.png)
 
 ### Relationships between variables and track popularity:
 
+![](./Graphs/loudness.png)
 ![](./Graphs/accousticness.png)
 ![](./Graphs/dancebility.png)
 ![](./Graphs/instrumentallness.png)
