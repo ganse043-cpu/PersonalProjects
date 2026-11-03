@@ -6,7 +6,7 @@ Analyzed e-commerce user events to compare funnel participation, traffic-source 
 
 [View the Tableau Dashboard](https://public.tableau.com/views/E-CommerceSalesFunnelAnalysis_17930521046890/E-CommerceSalesFunnelAnalysis)
 
-![E-commerce Sales Funnel Dashboard](dashboard.png)
+![E-commerce Sales Funnel Dashboard](Ecommerce_sales_funnel.png)
 
 ## Project Overview
 
