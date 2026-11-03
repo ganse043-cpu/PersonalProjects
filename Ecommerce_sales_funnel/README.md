@@ -3,9 +3,8 @@ Otto Ganser | MySQL · Tableau Public
 
 Analyzed e-commerce user events to compare funnel participation, traffic-source conversion rates, and revenue. Built a Tableau dashboard to communicate findings and identify areas for further investigation.
 
-Tableau dashboard: Add your published dashboard URL here.
-Dataset source: Add the dataset name, source URL, and whether it is real or simulated.
-Date range: Add the earliest and latest event dates.
+Tableau dashboard:(https://public.tableau.com/views/E-CommerceSalesFunnelAnalysis_17930521046890/E-CommerceSalesFunnelAnalysis?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 Dashboard
 
 The dashboard includes a revenue overview, user counts across five funnel stages, overall stage ratios, and view-to-cart and view-to-purchase rates by traffic source.
