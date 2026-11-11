@@ -40,28 +40,6 @@ The QB and QB Change experiments are in the notebook. Its live preview uses dept
 - The dashboard checks for final scores when opened and every two minutes while visible. Final scores appear after nflverse publishes them.
 - The bundled forecast CSV provides the initial snapshot before the first successful refresh.
 
-## Run locally
-
-Install Node.js and npm. From the repository root, run:
-
-```bash
-npx wrangler dev
-```
-
-Open the local URL Wrangler prints. To reproduce the model evaluation, open `nfl_predictions3.ipynb` in Jupyter or VS Code. The notebook uses pandas, NumPy, scikit-learn, PyArrow, and certifi. It can download the schedule, play-by-play, depth charts, and availability data. To use a local schedule, put `games.csv` beside the notebook.
-
-## Deploy on Cloudflare
-
-Enable R2 on your Cloudflare account, then run:
-
-```bash
-npx wrangler login
-npx wrangler r2 bucket create kickoff-report-forecasts
-npx wrangler deploy
-```
-
-Use the existing bucket if you already created it. If you choose a different name, update `bucket_name` in `wrangler.jsonc`. Wrangler runs `node build.mjs` and prints the deployed URL. The included Worker, frontend, and refresh dates are configured for the **2026 regular season**.
-
 ## Repository layout
 
 | Path | Contents |
