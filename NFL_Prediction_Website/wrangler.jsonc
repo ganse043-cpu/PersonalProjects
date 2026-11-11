@@ -1,0 +1,25 @@
+{
+	"name": "kickoff-report",
+	"main": "dist/server/index.js",
+	"compatibility_date": "2026-11-11",
+	"workers_dev": true,
+	"build": {
+		"command": "node build.mjs"
+	},
+	"r2_buckets": [
+		{
+			"binding": "BUCKET",
+			"bucket_name": "kickoff-report-forecasts"
+		},
+		{
+			"bucket_name": "kickoff-report-forecasts",
+			"binding": "kickoff_report_forecasts",
+			"remote": true
+		}
+	],
+	"triggers": {
+		"crons": [
+			"15 15 * 11,12,1 TUE"
+		]
+	}
+}
