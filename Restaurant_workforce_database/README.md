@@ -2,6 +2,9 @@
 
 A MySQL database for restaurant employee scheduling, time tracking, and workforce reporting. Built as a team project for INET 4707 at the University of Minnesota.
 
+# Database Schema
+![Restaurant Workforce Database ER diagram](Restaurant_DB_ERD.png)
+
 ## What the database does
 
 - Models employees, departments, positions, schedules, time logs, breaks, approvals, leave requests, attendance, overtime, and payroll across 13 related tables.
